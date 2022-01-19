@@ -1,0 +1,40 @@
+---
+title: "Correction"
+subtitle: ""
+author: "Alexis Lignoux"
+date:  \today
+always_allow_html: yes
+link-citations: yes
+output:
+    pdf_document:
+        keep_tex: true
+        includes:
+            in_header: "header.tex"
+        number_sections: true
+latex_engine: xelatex
+subparagraph: true
+subsubparagraph: true
+documentclass: article
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(dev = 'pdf')
+knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
+```
+
+
+\begin{center}
+
+{\LARGE Exercice corrigé}
+
+\end{center}
+
+\vspace{1.5cm}
+
+\normalsize
+
+```{r solve, results='asis'}
+cat(solveExercise())
+```
